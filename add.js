@@ -77,6 +77,12 @@ function doneTask(itemIndex){
     deleting(itemIndex);
     updateDoneTask(itemJsonArrayTask);
 }
+var input = document.getElementById("title");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    document.getElementById("myBtn").click();
+  }
+});
 // add = document.getElementById("add");
 // add.addEventListener("click", getAndUpdate);
 // update();
